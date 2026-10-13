@@ -14,7 +14,7 @@ st.set_page_config(
 def check_password():
     """如果密碼正確則回傳 True，否則顯示輸入框並回傳 False"""
     def password_entered():
-        if st.session_state["password"] == "my_private_password123":  # 👈 在這裡設定您的專屬密碼！
+        if st.session_state["password"] == "520":  # 👈 在這裡設定您的專屬密碼！
             st.session_state["password_correct"] = True
             del st.session_state["password"]  # 刪除暫存密碼以策安全
         else:
