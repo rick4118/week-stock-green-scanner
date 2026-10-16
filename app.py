@@ -24,7 +24,7 @@ def check_password():
         # 第一次進入，顯示輸入密碼畫面
         st.title("🔒 系統安全驗證")
         st.text_input(
-            "請輸入密碼以存取周K MACD 篩選器：",
+            "請輸入密碼以存取周K MACD 綠柱縮篩選器：",
             type="password",
             on_change=password_entered,
             key="password"
@@ -34,7 +34,7 @@ def check_password():
         # 密碼輸入錯誤，重新顯示輸入框與錯誤訊息
         st.title("🔒 系統安全驗證")
         st.text_input(
-            "請輸入密碼以存取周K MACD 篩選器：",
+            "請輸入密碼以存取周K MACD 綠柱縮篩選器：",
             type="password",
             on_change=password_entered,
             key="password"
@@ -88,7 +88,7 @@ if check_password():
         return result
 
     # --- App 主介面 ---
-    st.title("📊 周K MACD 綠縮篩選器")
+    st.title("📊 周K MACD 綠柱縮篩選器")
     st.write("歡迎回來！請輸入代號、設定日期，快速找出綠柱縮短的潛力個股！")
 
     default_tickers = "2330, 1519, 2603, 2605"
